@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="da">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="styles/faelles.css" />
+		<!--    <link rel="stylesheet" href="styles/">-->
+		<title>Portfolio</title>
+	</head>
+
+	<body>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background-color: rgb(255, 244, 225);
+			}
+
+			h2 {
+				font-family: "Open Sans", sans-serif;
+				font-size: 1em;
+				margin: 15px 0px 0px 10px;
+			}
+
+			p {
+				font-family: "Open Sans", sans-serif;
+				line-height: 27px;
+				font-size: 1em;
+				margin: 5px 10px 20px 10px;
+			}
+
+			.navn {
+				margin-top: 70px;
+				text-align: center;
+				font-size: 1.5em;
+				font-family: "Open Sans", sans-serif;
+				color: #d67c61;
+				font-weight: 600;
+				margin-bottom: 20px;
+			}
+
+			img {
+				display: block;
+				width: 80%;
+				margin-bottom: 20px;
+				margin: 0 auto;
+			}
+
+			button {
+				display: table;
+				margin: 40px auto 30px;
+				background-color: #d67c61;
+				width: 130px;
+				height: 40px;
+				border: none;
+				color: white;
+				border-radius: 10px;
+				cursor: pointer;
+				font-family: "Open Sans", sans-serif;
+				font-size: 0.9em;
+			}
+
+			button:hover {
+				background-color: #ba674e;
+			}
+
+			#next {
+				width: 30px;
+				height: 70px;
+				border: 2px solid #d67c61;
+				background-color: rgba(255, 255, 255, 0);
+				color: #d67c61;
+			}
+
+			#next:hover {
+				background-color: #d67c61;
+				color: white;
+			}
+
+			#billede_container {
+				display: flex;
+				align-items: center;
+			}
+			.link2 {
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 1em;
+				color: #d67c61;
+				font-family: "Open Sans", sans-serif;
+				margin-left: 10px;
+			}
+
+			.link2:hover {
+				color: #a2553e;
+			}
+
+			@media only screen and (min-width: 700px) {
+				.navn {
+					margin-top: 90px;
+					font-size: 1.8em;
+				}
+				#container {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-gap: 30px;
+					margin: 50px auto;
+					max-width: 1200px;
+				}
+				#second {
+					max-width: 500px;
+				}
+			}
+		</style>
+
+		<header>
+			<nav>
+				<div id="menuknap">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<div id="navbar" class="hidden">
+					<div id="link_box">
+						<a class="link" href="index.html">Forside</a>
+						<a class="link" href="index.html#portfolio">Portfolio</a>
+						<a class="link" href="index.html#om">Om mig</a>
+						<a class="link" href="index.html#kontakt">Kontakt</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<article>
+				<p class="navn"></p>
+				<div id="container">
+					<div id="billede_container">
+						<img class="billede1" src="" alt="" />
+
+						<button id="next">⇨</button>
+					</div>
+					<div id="second">
+						<h2>Opgavebeskrivelse:</h2>
+						<p class="opgave"></p>
+						<h2>Fremgangsmåde:</h2>
+						<p class="fremgang"></p>
+						<a class="link2" id="link2" href="" target="_blank" rel="noopener noreferrer">Gå til fulde website her ➜</a>
+						<button id="back">Tilbage</button>
+					</div>
+				</div>
+			</article>
+		</main>
+
+		<footer>
+			<div id="footer_tekst">
+				<p id="navn">Christine Piilmann</p>
+				<p>©Copyright. All rights reserved, 2021</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+
+	<script>
+		//---------SCRIPT BEGYNDER----------
+
+		const urlParams = new URLSearchParams(window.location.search);
+		const id = urlParams.get("id");
+		let billede;
+		const fil = "portfolio.json";
+		let randomTal = 0;
+
+		console.log("ID:", id);
+
+		document.addEventListener("DOMContentLoaded", loadJSON);
+
+		async function loadJSON() {
+			console.log("DOMErLoaded");
+			const resultat = await fetch(fil);
+			const json = await resultat.json();
+
+			const json_filtered = json.filter((billede) => billede._id == id);
+
+			visProjekt(json_filtered[0]);
+		}
+
+		function visProjekt(billede) {
+			document.querySelector(".navn").textContent = `${billede.navn}`;
+			document.querySelector(".billede1").src = `${billede.billeder[0]}`;
+			document.querySelector(".opgave").textContent += `${billede.opgavebeskrivelse}`;
+			document.querySelector(".fremgang").textContent += `${billede.fremgang}`;
+
+			document.querySelector("#next").addEventListener("click", () => {
+				const img = document.querySelector(".billede1");
+
+				randomTal = (randomTal + 1) % billede.billeder.length;
+				console.log(randomTal);
+
+				img.src = `${billede.billeder[randomTal]}`;
+			});
+
+			if (`${billede.link}` == "") {
+				document.querySelector(".link2").remove();
+			} else {
+				document.querySelector(".link2").href = `${billede.link}`;
+			}
+		}
+
+		document.querySelector("#back").addEventListener("click", tilbageTilForside);
+
+		function tilbageTilForside() {
+			history.back();
+		}
+	</script>
+</html>

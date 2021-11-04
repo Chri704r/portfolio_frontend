@@ -1,0 +1,73 @@
+[
+    {
+        "_id": "1",
+        "navn": "Banana Splat - Animationsspil",
+        "billede1": "img/animationsspil2.png",
+        "billeder": ["img/animationsspil.png", "img/spil_skitse.jpg", "img/spil_assets.png"],
+        "opgavebeskrivelse": "I denne opgave skulle vi designe og kode et animationsspil ved brug af Javascript. Som krav skulle det være et spil hvor man klikker på ting, og det grafiske skulle udarbejdes i Adobe Illustrater. ",
+        "fremgang": "Første del af processen var at komme på en ide til mit spil, hvor jeg lavede research, moodboards og styletile. Da det var sat på plads begyndte jeg at udarbejde skitser, som jeg senere rentegnede i Illustrator. Som forberedelse til at kode spillet lavede jeg aktivitetsdiagram, til at skabe overblik over hvad der skulle ske af forskellige ting under spillet. Derudover lavede jeg også et statemachinediagram, som en guide til hvordan mit Javascript skulle stilles op og hvilke funktioner jeg skulle bruge. ",
+        "kategori": "website",
+        "link": "https://piilmann.com/christine/kea/04_animation/spil/index.html"
+  },
+    {
+        "_id": "2",
+        "navn": "Artprint",
+        "billede1": "img/artprintpige.png",
+        "billeder": ["img/artprintpige.png", "img/artprint_student.png"],
+        "kategori": "grafik",
+        "opgavebeskrivelse": "Dette er ikke et skole projekt, men er lavet i min fritid. ",
+        "fremgang": "Jeg starter ud med at finde ud af hvad jeg vil tegne og finder derefter et billede1. Dermed kan jeg veg brug af pen tool i Illustrator begynde at tegne billedet op og fylde ud med de ønskede farver. Disse illustrator grafikker er forsimplede og minimalistiske og består derfor ikke af mange dele. ",
+        "link": ""
+  },
+
+    {
+        "_id": "3",
+        "navn": "T-shirt Webshop",
+        "billede1": "img/diudid.png",
+        "billeder": ["img/diudid.png", "img/ux_research.png", "img/ux_test.png"],
+        "kategori": "website",
+        "opgavebeskrivelse": "Fokus i denne opgave var brugergrænseflade og brugeroplevelse, altså UI og UX. Opgaven gik ud på at lave en t-shirt webshop, som giver kunden en god købsoplevelse. Derudover skulle vores produkt bygge på et unikt salgsargument (USP/Unique selling proposition). Webshoppen skulle ende ud i en Hi-fi prototype udarbejdet i XD.",
+        "fremgang": "Som start lavede jeg forskellig typer af research (deskresearch, observationer, spørgeskema og interview). Min ide blev at lave en t-shirt som kunne passe til alle former for begivenheder, og ud fra min research ville jeg lave en webshop som afspejlede dette. Dermed ville jeg lave et mix af en webshop med et ekslusivt design samt stadig være nem og overskuelig. Dermed lavede jeg en landingpage som leger med billedopstillingen, men undersider som er nemme at navigere rundt i. Jeg implementerede tydelige og mange forskellige billeder af produkterne for, at man som kunde kan få et ordentligt indblik af produktet. Da jeg havde udarbejdet min prototype udførte jeg test på den, for at undersøge kundernes oplevelse med webshoppen. Overordnet var det nemt og hurtigt for folk at navigere sig rundt på siden og kun enkelte knapper, forvirrede mine testpersoner, som jeg derefter lavede om for at gøre dem tydligere og mere forstående. ",
+        "link": "https://xd.adobe.com/view/17f2d9b1-e727-45ea-91be-b5e2236165f6-42a1/?fullscreen&hints=off"
+  },
+    {
+        "_id": "6",
+        "navn": "Aurelia kaffebar",
+        "billede1": "img/aurelia.png",
+        "billeder": ["img/aurelia.jpg", "img/aurelia_wireframe.png", "img/aurelia_skitse.jpeg" ],
+        "kategori": "website",
+        "opgavebeskrivelse": "Denne opgave er udarbejdet i grupper sammen med en valgfri virksomhed. Opgaven bestod af at lave indhold til en virksomhed og i den forbindelse redesigne virksomhedens hjemmeside.",
+        "fremgang": "Til denne opgave startede vi med at analysere virksomhedens daværende hjemmeside, samt lave reasearch for at finde frem til hvad og hvordan vi ville redesigne og forbedre hjemmesiden. Vi tog derefter ud til virksomheden hvor vi brugte tid på interviews, observationer, at tage billeder og filme til vores eget interview, brugt i redesignet. Derefter gik produktionen igang med prototyper, film-redigering og kode.",
+        "link": "https://piilmann.com/christine/kea/05_content/aurelia_redesign/forside.html"
+  },
+  {
+    "_id": "7",
+    "navn": "radio LOUD",
+    "billede1": "img/loud.png",
+    "billeder": ["img/loud.png", "img/styletile_loud.jpg", "img/loud_persona.png", "img/loud_tows.jpg"],
+    "kategori": "website",
+    "opgavebeskrivelse": "Denne opgave er udarbejdet i grupper sammen med radio LOUD. Opgaven bestod af at redesigne radio LOUD's nuværende hjemmeside, med fokus på at tiltrække flere lyttere og ramme målgruppen.",
+    "fremgang": "I udarbejdelsen af denne opgave, startede vi ud med research, valgtr at tage finde inspiration fra streamingtjenester såsom Spotify og Netflix, til selve opsætningen. Dette var valgt ud fra at gøre brugergrænsefladen genkendelig og hermed mere intuitiv. Selve hjemmesiden blev lavet i wordpress, hvor vi kodede vores eget tema. Dette inkluderede i høj grad atfetche data, til at udfylde hjemmesiden med korrekte informationer, og gøre hjemmesiden dynamaisk.",
+    "link": "https://piilmann.com/christine/kea/09_cms/loud/"
+},
+{
+  "_id": "8",
+  "navn": "Mewalii",
+  "billede1": "img/mewalii.png",
+  "billeder": ["img/mewalii.png", "img/mewalii_styletile.png", "img/mewalii_customer_journey.jpg", "img/mewalii_IG.jpg", "img/mewalii_annonce.png", "img/mewalii_bmc.png", "img/mewalii_persona.jpg"],
+  "kategori": "website",
+  "opgavebeskrivelse": "Dette var en eksamensopgave. Denne opgave er udarbejdet i grupper sammen med en valgfri virksomhed. Selve opgaven gik ud på at redesigne en virksomheds nuværende hjemmeside og give virksomheden en visuel identitet.",
+  "fremgang": "Til denne opgave startede vi med at analysere virksomhedens daværende hjemmeside, samt lave reasearch for at finde frem til hvad og hvordan vi ville redesigne og forbedre hjemmesiden. Vi udarbejdede personaer, business model canvas, SWOT/TOWS modeller og meeget mere for at komme frem til virksomhedens identitet. Vi udarbejde styletile med udgangspunkt i den kvindelige målgruppe og kreerede hjemmesiden med brug af wordpress, hvor vi lavede kodede vores eget tema med HTML, CSS og Javascript. Karakter for projekt: 12.",
+  "link": "https://piilmann.com/christine/kea/10_eksamen/mewalii/"
+},
+{
+  "_id": "9",
+  "navn": "Configurator",
+  "billede1": "img/configurator.png",
+  "billeder": ["img/configurator.png"],
+  "kategori": "website",
+  "opgavebeskrivelse": "Opgave lavet i egen fritid",
+  "fremgang": "Denne stol configurator er udarbejdet kun ved brug af ren vanilla HTML, CSS og Javascript",
+  "link": "https://piilmann.com/christine/kea/12_advanced_animation/chair_configurator/index.html"
+}
+]

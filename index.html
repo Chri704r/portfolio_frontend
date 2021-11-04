@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="da">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="stylesheet" href="styles/faelles.css" />
+		<title>Portfolio</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div id="menuknap">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<div id="navbar" class="hidden">
+					<div id="link_box">
+						<div class="nav_wrapper">
+							<img class="nav_icon" src="img/website_icon-02.svg" alt="" />
+							<a class="link" href="index.html#splash">Forside</a>
+						</div>
+						<div class="nav_wrapper">
+							<img class="nav_icon" src="img/website_icon-04.svg" alt="" />
+							<a class="link" href="index.html#portfolio">Portfolio</a>
+						</div>
+						<div class="nav_wrapper">
+							<img class="nav_icon" src="img/website_icon-01.svg" alt="" />
+							<a class="link" href="index.html#om">Om mig</a>
+						</div>
+						<div class="nav_wrapper">
+							<img class="nav_icon" src="img/website_icon-03.svg" alt="" />
+							<a class="link" href="index.html#kontakt">Kontakt</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div id="menu_nav"></div>
+		</header>
+
+		<main>
+			<section id="splash">
+				<div id="socialemedier">
+					<div class="some_ball">
+						<a href="https://www.facebook.com/christine.piilmann/"><img class="medie" src="img/facebook.png" alt="facebook ikon" /></a>
+					</div>
+					<div class="some_ball">
+						<a href="https://www.instagram.com/christinepiilmann/"><img class="medie" src="img/instagram.png" alt="instagram ikon" /></a>
+					</div>
+					<div class="some_ball">
+						<a href="https://www.pinterest.dk/Christinepiilmann/_saved/"><img class="medie" src="img/pinterest.png" alt="pinterest ikon" /></a>
+					</div>
+				</div>
+
+				<div id="titel">
+					<svg width="100vw">
+						<text id="overskrift" x="36vw" y="80%" text-anchor="middle">Multimediadesign.</text>
+					</svg>
+				</div>
+				<p id="beskrivelse">Multimediadesign student with passion for modern web solutions with focus on a good user experience.</p>
+				<p class="signatur">-Christine Piilmann</p>
+			</section>
+
+			<section id="portfolio">
+				<div id="filter">
+					<!--Filtreringsknapper med data-attributter--->
+					<button data-kategori="alle" class="valgt">All</button>
+					<button data-kategori="website">Websites</button>
+					<button data-kategori="grafik">Graphic design</button>
+				</div>
+
+				<div id="liste"></div>
+			</section>
+
+			<section id="om">
+				<div id="mig">
+					<div id="portrait_container">
+						<img src="img/mig.JPG" alt="billede af mig" />
+					</div>
+					<div id="omtekst">
+						<h2>Hello, I'm</h2>
+						<p>
+							Christine, and I am 21 years old. I am currently on my third semester as a multimediadesign student at KEA/Købenshavns Erhvervsakademi.
+							I love to be creative and develop modern web solutions. As a person I am structured and detail-minded, which reflects into my projects,
+							which always is well thought trough. I love to take on new experience and not afraid to try new things.
+						</p>
+					</div>
+				</div>
+				<div id="kompetence">
+					<div>
+						<div class="sidepic">
+							<img src="img/kompetence_icon-05.png" alt=" grafisk design ikon" />
+							<h3>UX/UI</h3>
+						</div>
+						<p>
+							The user experience is a make or break when visiting a website. Which is why I aspire to create a user interface that is interesting and
+							fun, to give the user a great experience. This includes animations, graphics and a visual identity that reflects the audience.
+						</p>
+					</div>
+					<div>
+						<div class="sidepic">
+							<img src="img/komp_icon-01.png" alt="web design ikon" />
+							<h3>Frontend development</h3>
+						</div>
+						<p>
+							As a student with a frontend focus and programming as the core, I use HTML, CSS and Javascript to create modern web solutions. With the
+							use of Javascript I create dynamic solutions, that takes the final product to the next level, and increases the user experience.
+						</p>
+					</div>
+					<div>
+						<div class="sidepic">
+							<img src="img/kompetence_icon-06.png" alt="digital kommunikation ikon" />
+							<h3>Project management</h3>
+						</div>
+						<p>
+							When creating a product guidelines can be needed. For that I use SCRUM-boards to keep track of the project and the different tasks that
+							are needed. With the use of Git and Github I can save projects as it is going along as well as being able to share work and code with
+							others.
+						</p>
+					</div>
+					<div>
+						<div class="sidepic">
+							<img src="img/komp_icon-02.png" alt="videoproduktion ikon" />
+							<h3>Graphic design</h3>
+						</div>
+						<p>
+							A great website needs graphic design. I make my own graphics using Photoshop and Illustrator. These graphics creates a visual identity
+							and adds understanding which increases the user experience. I also make graphics to use when creating animations.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="kontakt">
+				<div id="column_right">
+					<h4>Let's talk.</h4>
+					<p class="p">
+						Do you find my projects ineresting or would you like to know more? <br />
+						Then you're welcome to contact me. You can either fill out the formular on the right or call me on the phone number written below. I will
+						get bck to you as soon as possible.
+					</p>
+					<p class="p">I look forward to hear from you!</p>
+					<p class="p">Phone: +45 60 63 56 60</p>
+					<p class="signatur">-Christine Piimann</p>
+				</div>
+				<div id="column_left">
+					<div>
+						<img src="img/mail.png" alt="mail ikon" />
+						<p id="besked_overskrift">Write me a message</p>
+					</div>
+					<form name="besked" method="“post”" action="tak.html" data-netlify="true">
+						<div>
+							<label for="navn">
+								<p>Your first and lastname:</p>
+								<input type="text" placeholder="What is your name?" required />
+							</label>
+						</div>
+						<div>
+							<label for="mail">
+								<p>Your E-mail:</p>
+								<input type="text" placeholder="What is your mail adress?" required />
+							</label>
+						</div>
+						<div>
+							<label for="telefon">
+								<p>Your phone number:</p>
+								<input type="text" placeholder="Ex. +45 12 34 56 78" required />
+							</label>
+						</div>
+						<div>
+							<label for="emne">
+								<p>Topic:</p>
+								<input type="text" placeholder="What is your message about?" required />
+							</label>
+						</div>
+						<div>
+							<label for="besked">
+								<p>Message:</p>
+								<textarea name="message" cols="30" rows="6" placeholder="Write your message here" required></textarea>
+							</label>
+						</div>
+
+						<button type="submit">Send</button>
+					</form>
+				</div>
+			</section>
+
+			<template>
+				<article>
+					<div class="billede_container">
+						<img class="billede" src="" alt="" />
+						<div class="overlay">
+							<p class="navn"></p>
+						</div>
+					</div>
+				</article>
+			</template>
+		</main>
+
+		<footer>
+			<div id="footer_tekst">
+				<p id="navn">Christine Piilmann</p>
+				<p>©Copyright. All rights reserved, 2021</p>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+		<script src="script.js"></script>
+		<script src="forside.js"></script>
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+	</body>
+</html>
