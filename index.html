@@ -57,9 +57,10 @@
 				</div>
 
 				<div id="titel">
-					<svg width="100vw">
-						<text id="overskrift" x="36vw" y="80%" text-anchor="middle">Multimediadesign.</text>
-					</svg>
+					<h1 id="overskrift">Multimediadesign.</h1>
+					<!-- <svg width="100vw">
+						<text x="36vw" y="80%" text-anchor="middle">Multimediadesign.</text>
+					</svg> -->
 				</div>
 				<p id="beskrivelse">Multimediadesign student with passion for modern web solutions with focus on a good user experience.</p>
 				<p class="signatur">-Christine Piilmann</p>
@@ -141,51 +142,53 @@
 					<p class="p">
 						Do you find my projects ineresting or would you like to know more? <br />
 						Then you're welcome to contact me. You can either fill out the formular on the right or call me on the phone number written below. I will
-						get bck to you as soon as possible.
+						get back to you as soon as possible.
 					</p>
 					<p class="p">I look forward to hear from you!</p>
 					<p class="p">Phone: +45 60 63 56 60</p>
 					<p class="signatur">-Christine Piimann</p>
 				</div>
 				<div id="column_left">
-					<div>
-						<img src="img/mail.png" alt="mail ikon" />
-						<p id="besked_overskrift">Write me a message</p>
-					</div>
-					<form name="besked" method="“post”" action="tak.html" data-netlify="true">
+					<div id="form_wrapper">
 						<div>
-							<label for="navn">
-								<p>Your first and lastname:</p>
-								<input type="text" placeholder="What is your name?" required />
-							</label>
+							<img src="img/mail.png" alt="mail ikon" />
+							<p id="besked_overskrift">Write me a message</p>
 						</div>
-						<div>
-							<label for="mail">
-								<p>Your E-mail:</p>
-								<input type="text" placeholder="What is your mail adress?" required />
-							</label>
-						</div>
-						<div>
-							<label for="telefon">
-								<p>Your phone number:</p>
-								<input type="text" placeholder="Ex. +45 12 34 56 78" required />
-							</label>
-						</div>
-						<div>
-							<label for="emne">
-								<p>Topic:</p>
-								<input type="text" placeholder="What is your message about?" required />
-							</label>
-						</div>
-						<div>
-							<label for="besked">
-								<p>Message:</p>
-								<textarea name="message" cols="30" rows="6" placeholder="Write your message here" required></textarea>
-							</label>
-						</div>
+						<form name="besked" method="“post”" action="tak.html" data-netlify="true">
+							<div>
+								<label for="navn">
+									<p>Your first and lastname:</p>
+									<input id="navn" type="text" placeholder="What is your name?" required />
+								</label>
+							</div>
+							<div>
+								<label for="mail">
+									<p>Your E-mail:</p>
+									<input type="text" placeholder="What is your mail adress?" required />
+								</label>
+							</div>
+							<div>
+								<label for="telefon">
+									<p>Your phone number:</p>
+									<input type="text" placeholder="Ex. +45 12 34 56 78" required />
+								</label>
+							</div>
+							<div>
+								<label for="emne">
+									<p>Topic:</p>
+									<input type="text" placeholder="What is your message about?" required />
+								</label>
+							</div>
+							<div>
+								<label for="besked">
+									<p>Message:</p>
+									<textarea name="message" cols="30" rows="6" placeholder="Write your message here" required></textarea>
+								</label>
+							</div>
 
-						<button type="submit">Send</button>
-					</form>
+							<button type="submit">SEND</button>
+						</form>
+					</div>
 				</div>
 			</section>
 

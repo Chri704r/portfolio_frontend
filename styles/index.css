@@ -12,41 +12,11 @@ body {
 
 /*-------style af splash-------*/
 
-svg text {
-	padding-top: 10vh;
-	font-size: 2.1em;
-	font-family: Cyrene;
+#overskrift {
 	color: #d67c61;
-	letter-spacing: 1.5px;
-	filter: drop-shadow(4px 3px #e7af9e);
-	stroke-width: 2;
-	fill: #d67c61;
-	animation: textAnimate 8s infinite alternate;
-	animation-fill-mode: both;
-	stroke: #f77953;
-	animation-delay: 3s;
-	max-width: 70vw;
-}
-
-@keyframes textAnimate {
-	0%,
-	20% {
-		stroke-dasharray: 0 50%;
-		stroke-dashoffset: 20%;
-		fill: #d67c61;
-	}
-
-	60%,
-	100% {
-		stroke-dasharray: 50% 0;
-		stroke-dashoffset: -20%;
-		fill: #d67c6100;
-	}
-}
-
-#titel {
-	display: flex;
-	padding-top: 50px;
+	padding-top: 23vw;
+	font-size: 2.5rem;
+	margin: 15px 15px 0px 12vw;
 }
 
 @font-face {
@@ -187,7 +157,7 @@ h3 {
 #portrait_container {
 	border-radius: 64% 36% 62% 38% / 50% 73% 27% 50%;
 	overflow: hidden;
-	margin: 20px;
+	margin: 40px;
 }
 #om p {
 	font-size: 1em;
@@ -251,21 +221,23 @@ h4 {
 	letter-spacing: 1px;
 }
 #kontakt .signatur {
-	margin-left: 45vw;
+	margin-left: 25vw;
+}
+
+#column_right {
+	margin: 0px 20px 40px 30px;
 }
 
 #kontakt {
-	margin-left: -20vw;
+	margin: 30px;
 }
-#column_right {
-	margin: 0px 20px 40px 20px;
-}
+
 #column_right .p {
 	font-size: 1em;
 	font-family: "Open Sans", sans-serif;
 	line-height: 26px;
 	margin-bottom: 30px;
-	max-width: 80vw;
+	max-width: 400px;
 }
 #besked_overskrift {
 	font-size: 1.2em;
@@ -275,18 +247,19 @@ h4 {
 	font-family: "Open Sans", sans-serif;
 	color: rgb(20, 27, 80);
 }
-#column_left {
-	display: table;
-	margin: 0 auto 0 auto;
-	color: rgb(20, 27, 80);
-	margin-left: -2vw;
-}
+
 #column_left img {
 	width: 25px;
 	margin: 5px;
 	position: relative;
 	top: 35px;
 	z-index: -5;
+}
+
+#form_wrapper {
+	display: block;
+	margin: 0 auto;
+	width: 85vw;
 }
 label {
 	margin: 10px;
@@ -299,7 +272,7 @@ input {
 	border: none;
 	border-bottom: 2px solid #4b4b4b;
 	padding: 10px 0px 10px 0px;
-	width: 300px;
+	width: 100%;
 	font-family: "Open Sans", sans-serif;
 	background-color: rgb(255, 244, 225);
 }
@@ -308,7 +281,7 @@ textarea {
 	border: none;
 	border-bottom: 2px solid #4b4b4b;
 	padding: 10px 0px 20px 0px;
-	width: 300px;
+	width: 100%;
 	font-family: "Open Sans", sans-serif;
 	background-color: rgb(255, 244, 225);
 }
@@ -322,6 +295,7 @@ textarea {
 	color: white;
 	border-radius: 10px;
 	cursor: pointer;
+	font-size: 12px;
 }
 #kontakt button:hover {
 	background-color: #ba674e;
@@ -330,8 +304,9 @@ textarea {
 /*---------------TABLET VERSION-----------------*/
 
 @media only screen and (min-width: 650px) {
-	svg text {
-		font-size: 4em;
+	#overskrift {
+		padding-top: 12vw;
+		font-size: 4rem;
 	}
 	#beskrivelse {
 		font-size: 1.1em;
@@ -360,40 +335,41 @@ textarea {
 		margin-right: 50px;
 	}
 	#kontakt {
-		display: grid;
-		grid-template-columns: 40% 60%;
+		display: flex;
+		gap: 40px;
 		max-width: 1000px;
-		margin-left: -20vw;
+		margin: 0 auto;
+	}
+
+	#form_wrapper {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		padding-right: 30px;
 	}
 
 	#column_right {
 		margin: 30px 20px 40px 20px;
 	}
-	#column_left {
-		display: table;
-		margin: 0 auto 0 auto;
-		margin-left: 0vw;
-	}
+
 	#kontakt .signatur {
 		margin-top: 60px;
 		margin-left: 8vw;
 		font-size: 1.6em;
 	}
-	input {
-		width: 40vw;
-		max-width: 400px;
-	}
-	textarea {
-		width: 40vw;
-		max-width: 400px;
+	#portrait_container {
+		border-radius: 64% 36% 62% 38% / 50% 73% 27% 50%;
+		overflow: hidden;
+		margin: 20px;
 	}
 }
 
 /*---------------DESKTOP VERSION-----------------*/
 
 @media only screen and (min-width: 1000px) {
-	svg text {
-		font-size: 6em;
+	#overskrift {
+		padding-top: 8vw;
+		font-size: 5rem;
 	}
 	.signatur {
 		font-size: 1.8em;
@@ -424,7 +400,14 @@ textarea {
 		margin-bottom: 30px;
 		margin-top: 30px;
 	}
+	#form_wrapper {
+		display: block;
+		margin: 0 auto;
+		width: 400px;
+		padding-right: 30px;
+	}
+
 	#kontakt {
-		margin-left: -9vw;
+		gap: 70px;
 	}
 }

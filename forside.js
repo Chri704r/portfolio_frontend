@@ -87,8 +87,8 @@ function navScroll() {
 //---------scrolltrigger----------
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#kontakt", {
-	x: "35vw",
+/* gsap.to("#omtekst", {
+	x: "-300px",
 	duration: 2,
-	scrollTrigger: { trigger: "#kontakt", scrub: true, toggleActions: "play pause resume none" },
-});
+	scrollTrigger: { trigger: "#omtekst", scrub: true, toggleActions: "play pause resume none" },
+}); */
