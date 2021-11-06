@@ -83,12 +83,3 @@ function navScroll() {
 		document.querySelector("nav").style.backgroundColor = "";
 	}
 }
-
-//---------scrolltrigger----------
-gsap.registerPlugin(ScrollTrigger);
-
-/* gsap.to("#omtekst", {
-	x: "-300px",
-	duration: 2,
-	scrollTrigger: { trigger: "#omtekst", scrub: true, toggleActions: "play pause resume none" },
-}); */
